@@ -1,11 +1,24 @@
 body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
+  background-color: rgb(12, 12, 12);
 }
 
 a {
   text-decoration: none;
   color: wheat;
+}
+h1 {
+  background-color: white;
+  color: black;
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+  font-size: 2.5em; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px; 
+  border: 2px solid white; 
+  margin: 20px 0; 
 }
 
 header {
@@ -101,14 +114,14 @@ nav a:hover {
 }
 
 .video {
-  width: 80%; /* Aumenta el tamaño del video */
-  max-width: 1200px; /* Establece un máximo para pantallas más grandes */
-  height: 500px; /* Ajusta la altura del video */
+  width: 80%; 
+  max-width: 1200px; 
+  height: 500px; 
   background-color: rgb(247, 246, 246);
   border: 1px solid black;
   border-radius: 10px;
   padding: 20px;
-  margin: 0 auto; /* Centrar horizontalmente */
+  margin: 0 auto; 
 }
 
 .video iframe {
@@ -119,8 +132,8 @@ nav a:hover {
 
 @media (max-width: 767px) {
   .video {
-    width: 100%; /* Full width on small screens */
-    height: auto; /* Automatic height adjustment */
+    width: 100%; 
+    height: auto; 
     margin: 0 auto;
   }
 
@@ -180,15 +193,69 @@ footer {
   display: flex;
   align-items: center;
 }
+#contenedor_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+}
+
 .card {
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   padding: 16px;
-  margin: 16px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  color: white;
 }
+
 .card img {
   max-width: 100%;
   height: auto;
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+.container-steam {
+  background-color: #0f0f0f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container-steam h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container-steam p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.steam-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.btn-steam {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #51d94c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-steam:hover {
+  background-color: #50e048;
 }

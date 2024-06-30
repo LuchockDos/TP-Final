@@ -1,0 +1,179 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('Img/q-tum-qtum-space-qtum-new.gif');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.logo-nombre {
+    color: wheat;
+}
+
+header {
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    background-color: #080808;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: wheat;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: wheat;
+}
+
+nav a {
+    font-weight: 600;
+    margin-right: 20px;
+    text-decoration: none;
+    color: wheat;
+}
+
+nav a:hover {
+    color: black;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    nav {
+        margin-bottom: 10px;
+    }
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    background-color: #222121;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #eddff0;
+    border: 2px solid #f0faf1;
+    color: black;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-txt a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 25px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: #50e048;
+}
+
+@media (max-width: 250px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    }
+}
+
+footer {
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    background-color: #080808;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-f {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: wheat;
+}
